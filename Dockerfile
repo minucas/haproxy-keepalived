@@ -1,8 +1,8 @@
-FROM haproxy:1.7-alpine
+FROM haproxy:1.9.0
 
 LABEL maintainer="Peling <penglong95.li@gmail.com>"
 
-ARG KEEPALIVED_VERSION=1.3.9
+ARG KEEPALIVED_VERSION=2.0.9
 
 COPY start.sh /
 COPY script/locale.md /
